@@ -130,7 +130,8 @@ function goHome() {
   if (properties.MDX15or20) {
     writeBlock("^PR");
     writeBlock("V" + feedOutput.format(rapidFeed));
-    writeBlock("Z0,0,162.6"); // retract
+//    writeBlock("Z0,0,162.6"); // retract :XiaoShiZi MAX Z Height is 60.5/0.025=2420 No "." in file allowed afaik. What is .6 ?
+    writeBlock("Z0,0,2042"); // retract to machine uper Z
     writeBlock("^PA");
   } else if (properties.MDX40) {
     writeBlock("^PR");
